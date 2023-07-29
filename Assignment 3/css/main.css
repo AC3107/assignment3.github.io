@@ -1,0 +1,201 @@
+/* Reset box model for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .logo {
+    width: 70px;
+    height: auto;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Main styles */
+main {
+    width: 66.66%;
+    float: right;
+    padding: 10px;
+}
+
+main h2 {
+    margin: 0;
+}
+
+/* Style the image in the main section */
+main img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #66bb6a; /* Green */
+    border-radius: 5px;
+  }
+  
+  /* Style the video in the main section */
+  main video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border: 5px solid #ab47bc; /* Purple */
+    border-radius: 5px;
+  }
+
+/* Aside styles */
+aside {
+    width: 33.33%;
+    float: left;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+aside h2 {
+    margin: 0;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Form styles */
+form {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+form fieldset {
+    margin-bottom: 20px;
+    border: none;
+}
+
+form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #555;
+}
+
+/* Form validation styles */
+form input:required:invalid,
+form select:required:invalid,
+form textarea:required:invalid {
+    border-color: #ff0000;
+}
+
+form input[type="submit"] {
+    margin-right: 10px;
+}
+
+/* Placeholder color */
+form textarea::placeholder {
+    color: #999;
+}
+
+/* Focus attribute for Name input */
+form input#name:focus {
+    border-color: #007bff;
+}
+
+/* Autocomplete attribute */
+form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
